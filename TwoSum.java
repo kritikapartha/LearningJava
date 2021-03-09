@@ -1,3 +1,4 @@
+//Returns the indices of two numbers in an array that add up to the target value
 package learningjava;
 
 public class TwoSum {
