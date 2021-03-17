@@ -10,7 +10,7 @@ public class TwoSum {
 		arr[2]=11;
 		arr[3]=15;
 		
-		twoSum(arr,9);
+		twoSum(arr,9); //testing
 		
 		
 	}
@@ -20,7 +20,7 @@ public class TwoSum {
 	        for (int i=0; i<nums.length;i++){
 	            for(int k=0; k<nums.length;k++)
 	                {
-	                    if (nums[i]+nums[k] == target && i!=k)
+	                    if (nums[i]+nums[k] == target && i!=k) //Checks if numbers at index i and k are equal to target and that indexes are two different numbers
 	                    {
 	                        result[0] = k;
 	                        result[1] = i;
