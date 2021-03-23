@@ -1,26 +1,27 @@
+//Given a string s, returns the longest instance of a palindrome within it
 package learningjava;
 
 public class LongestPalindrome {
 	
 	public String longestPalindrome(String s) {
-	       int max = 1;
-	       int start = 0;
+	       int max = 1; //max length
+	       int start = 0; //start of the palindrome
 	       String end = " ";
 	      
 	       for (int i=0; i<s.length(); i++){
 	           for (int j = i; j<s.length(); j++)
 	           
 	            {
-	                int check = 1;
+	                boolean check = true;; //used to check if it is palindrome
 	                for (int k=0; k<(j-i+1);k++)
 	                {
-	                    if(s.charAt(i+k) != s.charAt(j-k))
+	                    if(s.charAt(i+k) != s.charAt(j-k)) //
 	                        {
-	                            check = 0;
+	                            check = false;
 	                        }
 	                }
 	                
-	                if(check!=0 && (j-i+1) > max)
+	                if(check!=false && (j-i+1) > max)
 	                    {
 	                        start = i;
 	                        max = j-i+1;
