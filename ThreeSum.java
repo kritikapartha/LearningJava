@@ -1,3 +1,5 @@
+//Finds all unique triplets in the array calculated to a sum of 0
+//Brute force method
 package learningjava;
 
 public class ThreeSum {
@@ -8,7 +10,7 @@ public class ThreeSum {
 	            {
 	                for(int k=n; k<nums.length; k++)
 	                {
-	                    if (i != k && k != n && i != n && (nums[i] + nums[n] + nums[k]) == 0)
+	                    if (i != k && k != n && i != n && (nums[i] + nums[n] + nums[k]) == 0) //checks duplicates and sum of 0
 	                    {
 	                        List<Integer> part = new ArrayList<Integer>(3);
 	                        part.add(nums[i]);
